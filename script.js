@@ -49,3 +49,24 @@ while (continueOrder === "y") {
 console.log("Number of items:", receiptItems.length);
 
 //Journal Prompt 2
+
+//Phase 3: Processing the Order with for...of
+//Now that items are collected, process the order line-by-line using a loop.
+//Iterate over the receiptItems array using a for...of loop.
+
+let subtotal = 0;
+
+//Print each item’s name and price to the console in a formatted string (e.g., Bean Burrito -- $3.40).
+for (let item of receiptItems) {
+    console.log(item.name, item.price);
+
+    //Keep a running subtotal of all food item prices calculated inside the loop.
+    subtotal = subtotal + item.price;
+}
+
+//After the loop completes, log the total food subtotal to the console.
+console.log("Subtotal:", subtotal);
+
+//Journal Prompt
+
+

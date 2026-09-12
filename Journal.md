@@ -3,3 +3,6 @@ You can access all of the information about the store in one place with one obje
 
 Journal Prompt 2: What happens if you set a value to a property of an object that didn’t exist before? How does that effect the ways that you can create and set object properties?
 JS will let you add the property even if it wasn't there before, which is useful because objects can start off empty and be built as the programs goes along.
+
+Journal Prompt 3: Reflect on using the for...of loop to move through your list. How did you target and pull out just the price property from each item object inside the loop?
+I accessed each item's price using dot notation: item.price -- which targets the item and retrieves the price stored in the object's price property.
