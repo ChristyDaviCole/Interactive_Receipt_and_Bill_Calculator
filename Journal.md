@@ -6,3 +6,6 @@ JS will let you add the property even if it wasn't there before, which is useful
 
 Journal Prompt 3: Reflect on using the for...of loop to move through your list. How did you target and pull out just the price property from each item object inside the loop?
 I accessed each item's price using dot notation: item.price -- which targets the item and retrieves the price stored in the object's price property.
+
+Journal Prompt 4: Reflect on how using .pop() affected your data. How did removing an item from the array automatically change your final calculations when you ran the total logic?
+.pop() removed the last element from my receiptItems array & returned the removed element.Recalculation was necessary to count only the remaining items.

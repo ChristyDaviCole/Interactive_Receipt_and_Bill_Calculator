@@ -69,4 +69,38 @@ console.log("Subtotal:", subtotal);
 
 //Journal Prompt
 
+//Phase 4: Order Modification & Final Bill
+//Handle a last-minute order change and print the final computed receipt.
+//Simulate a customer canceling their last item: use .pop() to remove the final object from receiptItems, and log a message naming the item that was removed.
 
+let removedItem = receiptItems.pop();
+
+console.log("Removed item:", removedItem);
+
+//Recalculate the revised food subtotal from your array.
+
+subtotal = 0;
+
+for (let item of receiptItems) {
+    subtotal = subtotal + item.price;
+}
+
+//Add the tableFee from storeInfo to the food subtotal to determine the gross subtotal.
+
+let grossSubtotal = subtotal + Number(storeInfo.tableFee);
+
+//Calculate the tax amount using taxRate from storeInfo.
+
+let taxAmount = grossSubtotal * (Number(storeInfo.taxRate) / 100);
+
+//Log the final itemized receipt to the console, showing the final list of items, the table fee, subtotal, tax amount, and the grand total.
+
+let grandTotal = grossSubtotal + taxAmount;
+
+console.log("All items:", receiptItems);
+console.log("Table Fee:", storeInfo.tableFee);
+console.log("Subtotal:", subtotal);
+console.log("Tax Amount:", taxAmount);
+console.log("Grand Total:", grandTotal);
+
+//Journal Prompt
